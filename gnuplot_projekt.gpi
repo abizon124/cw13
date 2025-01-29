@@ -1,3 +1,3 @@
 set term pdf
-set output 'plot.pdf'
+set output 'gnuplot_projekt.pdf'
 plot '<./a.out 0 64 0 64
