@@ -9,6 +9,6 @@ jobs:
       - run: sudo apt-get install gnuplot-nox
       - run: gnuplot gnuplot_projekt.gpi
       - run: ls
-      - uses: actions/upload-artifact@v4
+      - uses: actions/uploaded-artifact@v4
         with:
           path: gnuplot_projekt.pdf
