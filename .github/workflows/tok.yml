@@ -6,3 +6,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: gcc mandelbrotset.c -lm
+      - run: sudo apt-get install gnuplot-nox
+      - run: gnuplot gnuplot_projekt.gpi
+      - run: ls
