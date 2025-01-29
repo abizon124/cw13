@@ -11,4 +11,4 @@ jobs:
       - run: pdflatex latex.tex
       - uses: actions/upload-artifact@v4
         with:
-          path: gnuplot_projekt.pdf
+          path: latex.pdf
