@@ -6,7 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: gcc mandelbrotset.c -lm
-      - run: sudo apt-get install gnuplot-nox
+      - run: sudo apt-get install gnuplot-nox texlive
       - run: gnuplot gnuplot_projekt.gpi
       - run: ls
       - uses: actions/upload-artifact@v4
