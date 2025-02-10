@@ -1,7 +1,21 @@
 \documentclass{article}
 \usepackage{graphicx, listings, xcolor}
-
+\usepackage[a4paper, margin=1cm]{geometry}
+\definecolor{bgcolor}{rgb}{0.9,0.95,1.0}
 \begin{document}
-    \lstinputlisting[language=C]{mandelbrotset.c}\
+    \lstset{
+        basicstyle=\ttfamily,
+        backgroundcolor=\color{bgcolor},
+        commentstyle=\color{green},
+        keywordstyle=\{magenta},
+        numberstyle=\tiny\color{blue},
+        stringstyle=\color{teal},
+    }        
+    \section{kod C}
+    \lstinputlisting[language=C]{mandelbz koderotset.c
+    \section{kod Gnuplot}
+    \lstinputlisting[language=gnuplot]{gnuplot_projekt.gpi}
     \includegraphics{gnuplot_projekt.pdf}
+    \section{wykres}
+    \includegraphiscs[width=\textwidth]{gnuplot_projekt.pdf}
 \end{document}
