@@ -11,7 +11,8 @@ bool in_set(complex c, int n){
 }
 int main(int argc, char*argv[]){
     assert(argc==5);
-    double xmin=atof(argv[1]), xmax =atof(argv[2]), ymin =atof(argv[3]), ymax= atof(argv[4]);
+    double xmin=atof(argv[1]), xmax =atof(argv[2]),
+    ymin =atof(argv[3]), ymax= atof(argv[4]);
     for (int i=0; i<=64; i++)
         for(int j=0; j<=64; j++){
             double x= xmin + i*(xmax-xmin)/640.;
